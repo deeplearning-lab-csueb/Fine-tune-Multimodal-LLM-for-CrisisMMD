@@ -7,7 +7,8 @@ We use the same benchmark splits introduced by Ofli *et al.* (2020), and only co
 
 The class distributions across the train/dev/test splits of the dataset for the Tweet Informativeness and Humanitarian Category tasks are as follows:
 #### Class distribution for *Informativeness* and *Humanitarian Category* tasks
-|                 |                      | ** Text** |          |            |                | **Image ** |           |  |  |
+|                 |                      | ** Text** |          |            |                | **Image ** |           |          |          |
+|----------------|-----------------------|----------------|--------------|---------------|----------------|------------------|---------------|----------------|------------------|
 | **Task**       | **Category**          | ** Train** | ** Dev** | ** Test** | ** Total** | ** Train** | ** Dev** | ** Test** | ** Total** |
 |----------------|-----------------------|----------------|--------------|---------------|----------------|------------------|---------------|----------------|------------------|
 | **Informative** | Informative           | 5,546          | 1,056        | 1,030         | 7,632          | 6,345            | 1,056         | 1,030          | 8,431            |
