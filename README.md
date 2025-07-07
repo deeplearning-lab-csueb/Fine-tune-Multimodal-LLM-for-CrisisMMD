@@ -1,6 +1,6 @@
 # Fine-tune-Multimodal-LLM-for-CrisisMMD
 
-## CrisisMMD dataset
+## 1. CrisisMMD dataset
 Original CrisisMMD dataset: https://crisisnlp.qcri.org/crisismmd 
 
 We use the same benchmark splits introduced by Ofli *et al.* (2020), and only consider tweets where the text and image share the same label for consistency. Additionally, we followed the practice in Mandal *et al.* (2024) and merged a few semantically similar classes to streamline classification. Specifically, *“injured or dead people”* and *“missing or found people”* were consolidated into *“affected individuals”*, while *“vehicle damage”* was grouped under *“infrastructure and utility damage”*.
@@ -21,12 +21,18 @@ The class distributions across the train/dev/test splits of the dataset for the 
 |                | **Total**              | 5,263      | 998      | 955       | 7,216      | 6,126       | 998       | 955        | 8,079       |
 
 
-## Zero-shot, One-shot and partial Five-shot experiments
-Zero-shot, One-shot experiments of GPT-4o, GPT-4o mini, Llama 3.2 11B models are at Anh-New/Performance_Comparison_Improved_July2025.ipynb
-Five-shot experiments on Humanitarian classification task with GPT-4o, GPT-4o mini Anh-New/Performance_Comparison_Improved_July2025.ipynb
+## 2. Zero-shot, One-shot and partial Five-shot experiments 
 
-## Fine-tuning LLaMA 3.2 11B with LoRA
-Code in LLaMA/LLaMA-3.2-11B
+
+Zero-shot and One-shot experiments using `GPT-4o`, `GPT-4o mini`, and `LLaMA 3.2 11B` models can be found in [`Anh-New/Performance_Comparison_Improved_July2025.ipynb`](Anh-New/Performance_Comparison_Improved_July2025.ipynb).
+
+Partial Five-shot experiments on the Humanitarian classification task with `GPT-4o` and `GPT-4o mini` are also included in [`Anh-New/Performance_Comparison_Improved_July2025.ipynb`](Anh-New/Performance_Comparison_Improved_July2025.ipynb).
+
+Prompts can be found in Jupyter Notebooks in [`Anh-New/`](Anh-New).
+
+
+## 3. Fine-tuning LLaMA 3.2 11B with LoRA
+Code can be found in [`LLaMA/LLaMA-3.2-11B`](LLaMA/LLaMA-3.2-11B).
 ### Hyper-parameters for Informative and Humanitarian Tasks (LLaMA 3.2 11B)
 
 | Hyper-parameter | Informative - Text only | Informative - Image only | Informative - Text + Image | Humanitarian - Text only | Humanitarian - Image only | Humanitarian - Text + Image |
