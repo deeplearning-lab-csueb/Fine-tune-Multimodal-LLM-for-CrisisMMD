@@ -41,3 +41,5 @@ Code can be found in [`LLaMA/LLaMA-3.2-11B`](LLaMA/LLaMA-3.2-11B).
 | batch size      | 16                      | 1                         | 16                          | 16                        | 1                           | 16                            |
 | learning rate   | 5e-4                    | 1e-4                      | 1e-3                        | 5e-4                      | 1e-4                        | 1e-3                          |
 | epoch           | 3                       | 3                         | 2                           | 3                         | 3                           | 3                             |
+| trainable params | 52,428,800 | 26,214,400 | 52,428,800 | 78,643,200 | 26,214,400 | 78,643,200 |
+| trainable% | 0.4902 | 0.2451 | 0.4902 | 0.7352 | 0.2451 | 0.7352 |
